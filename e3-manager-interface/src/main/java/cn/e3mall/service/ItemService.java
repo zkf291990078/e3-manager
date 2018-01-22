@@ -3,6 +3,7 @@ package cn.e3mall.service;
 import cn.e3mall.common.pojo.EasyUIDataGridResult;
 import cn.e3mall.common.utils.E3Result;
 import cn.e3mall.pojo.TbItem;
+import cn.e3mall.pojo.TbItemDesc;
 
 public interface ItemService {
 
@@ -21,4 +22,6 @@ public interface ItemService {
 	public E3Result deleteItem(Long[] ids);
 
 	public E3Result reshelfItem(Long[] ids);
+
+	public TbItemDesc getItemDescById(long itemid);
 }
